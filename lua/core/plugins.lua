@@ -118,6 +118,7 @@ require("lazy").setup(
         config = function() require "configs.treesitter" end,
       },
       ["NvChad/nvim-colorizer.lua"] = {
+        cmd = { "ColorizerToggle", "ColorizerAttachToBuffer", "ColorizerDetachFromBuffer", "ColorizerReloadAllBuffers" },
         init = function() table.insert(astronvim.file_plugins, "nvim-colorizer.lua") end,
         cmd = { "ColorizerToggle", "ColorizerAttachToBuffer", "ColorizerDetachFromBuffer", "ColorizerReloadAllBuffers" },
         config = function() require "configs.colorizer" end,
